@@ -19,7 +19,7 @@ Destroy an object
 
 How to start it
 
-Use the following instructions inorder to get started with the project on your local machine
+Use the following instructions in order to get started with the project on your local machine
 https://github.com/Chukwunonso10/AirBnB_clone.git
 
 After cloning CD to the folder AirBnB_clone, Here there will be several files which contains the functionality of the program
@@ -97,4 +97,4 @@ hbnb) create BaseModel
 Authors
 Kuzue Chukwunonso | Email: kuzuechinonsojude
 
-Effiong Blessing |  Email: 
+Effiong Blessing |  Email: blesift@gmail.com
