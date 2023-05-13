@@ -1,17 +1,35 @@
-import cmd 
-prompt = "(hbnb)"
+#!/usr/bin/python3
+
+import cmd
+import sys
 
 class HBNBCommand(cmd.Cmd):
-    def do_EOF(self, arg):
-        """exit out of the program using CTRL D OR CTRL C"""
-        return True
+    
+
+    prompt = "(hbnb) "
 
     def do_quit(self, arg):
-        """terminates the program using the quit command"""
+        """Quit command to exit the program
+        """
         return True
-    def do_emptyline(self):
-        pass
-    def precmd(self, line):
-        """makes the app to work in non-interactive mode"""
-        if not sys.stdin.isatty():
+    def do_EOF(self, arg):
+        """Handles End Of File character
+        """
+        return True
 
+    def emptyline(self):
+        """*** Unknown syntax: emptyline
+        """
+        pass
+        """help :gives information into commands
+        """
+
+
+
+if __name__ == '__main__':
+    """to work in non-interactive mode
+    """
+    if (len(sys.argv) > 1):
+        HBNBCommand().onecmd("".join(sys.argv[1:]))
+    else:
+        HBNBCommand().cmdloop()
