@@ -3,7 +3,7 @@ from io import StringIO
 import unittest
 from console import HBNBCommand
 
-class Testtests(unittest.TestCase):
+class TestHBNBCommand(unittest.TestCase):
     def setUp(self):
         self.cmd = HBNBCommand()
 
