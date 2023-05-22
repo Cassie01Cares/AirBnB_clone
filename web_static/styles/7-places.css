@@ -1,28 +1,32 @@
-.places {
-    margin-top: 30px;
+.places{
+    border: 0;
     display: flex;
-    /* box-sizing: border-box; */
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* border: #FF5A5F 2px solid; */
+    flex-direction: column;
+    padding-left: 30px;
 }
-
-.places h1, .places h2 {
+.places h1{
     font-size: 30px;
 }
-
-.places h1 {
-    width: 100%;
+.places_title{
+    padding-top: 30px;
+    margin-bottom: -25px;
 }
-
-.places article {
+.articles{
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.places article{
     width: 390px;
-    min-width: 390px;
     margin: 20px;
     padding: 20px;
-    border: #FF5A5F 1px solid;
+    border: solid #FF5A5F 1px;
     border-radius: 4px;
     text-align: center;
-    /* flex: 1 2 auto; */
+    font-size: 30px;
+}
+article h2{
+    font-size: 30px;
+    margin-top: -2px;
 }
